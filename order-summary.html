@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ordeer-Summary | Frontend mentor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      background-image: url('pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      margin: 0;
+      background-color: hsl(225, 100%, 94%);
+      padding: 8% 35% 8% 35%;
+
+    }
+
+    * {
+      font-family: 'Red Hat Display';
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .main {
+      background-color: hsl(225, 100%, 98%);
+      display: inline-block;
+      border-radius: 20px;
+      padding-bottom: 20px;
+
+    }
+
+    .illustration-hero {
+      width: 100%;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    .order-summary {
+      text-align: center;
+      font-weight: bold;
+      color: hsl(223, 47%, 23%);
+    }
+
+    .summary {
+      font-size: 12px;
+      text-align: center;
+      width: 75%;
+      margin-left: 35px;
+      font-weight: 500;
+      color: gray;
+    }
+
+    .div-annualplan {
+      background-color: hsla(240, 29%, 91%, 0.602);
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 6%;
+      margin-top: 7%;
+      border-radius: 20px;
+      display: grid;
+      grid-template-columns: 40px 1fr 1fr;
+      padding: 20px 0px 20px 20px;
+      align-items: center;
+    }
+
+    .icon-music {
+      width: 100%;
+      margin-right: 10px;
+
+    }
+
+    .annual-plan {
+      color: hsl(223, 47%, 23%);
+      font-weight: bolder;
+      font-size: 18px;
+    }
+
+    .price {
+      color: gray;
+      margin-top: 3px;
+      font-size: 18px;
+    }
+
+    .div-tariff {
+      margin-left: 14px;
+
+    }
+    .change{
+      margin:0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .change:active,
+    .change:hover{
+      color:hsla(261, 100%, 71%, 0.97) ;
+    }
+   
+    .payment{
+      display: block;
+      background-color:hsl(245, 75%, 52%);
+      color:hsl(225, 100%, 98%);
+      width: 80%;
+      height: 60px;
+      font-weight: bold;
+      margin: auto;
+      border: none;
+      border-radius: 15px;
+      font-size: 18px;   
+      cursor: pointer;  
+      transition: box-shadow 0.15s; 
+    }
+    .payment:hover{
+      background-color: hsla(261, 100%, 71%, 0.97);
+      box-shadow: 0px 10px 19px hsla(261, 100%, 71%, 0.6);
+    }
+    .cancel{
+      font-size: 18px;
+      font-weight: bold;
+      color: hsl(224, 23%, 55%);
+      border: none;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      background-color: hsl(225, 100%, 98%);
+      cursor: pointer;
+    }
+    .cancel:hover{
+      color: hsl(223, 47%, 23%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <img class="illustration-hero" src="illustration-hero.svg" alt="illustration-hero">
+
+    <h2 class="order-summary">Order Summary</h2>
+    <p class="summary">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you
+      like!</p>
+    <div class="div-annualplan">
+      <img class="icon-music" src="icon-music.svg" alt="icon-music-img">
+      <div class="div-tariff">
+        <p class="annual-plan">Annual Plan</p>
+        <p class="price">$59.99/year</p>
+      </div>
+
+      <a class="change" href="www.jiorecharge.com">Change</a>
+    </div>
+    <button class="payment">Proceed to Payment</button>
+    <button class="cancel">Cancel Order</button>
+  </div>
+
+
+</body>
+
+</html>
